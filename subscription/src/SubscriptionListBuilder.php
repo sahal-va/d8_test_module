@@ -89,7 +89,7 @@ class SubscriptionListBuilder extends EntityListBuilder {
    * {@inheritdoc}
    */
   public function buildRow(EntityInterface $entity) {
-    /* @var $entity \Drupal\subscription\Entity\SubscriptionInterface */
+    /** @var \Drupal\subscription\Entity\SubscriptionInterface $entity */
     $row['id'] = $entity->label();
     $row['title'] = $entity->toLink($entity->getTitle());
     $row['status'] = $entity->isEnabled() ? $this->t('Enabled') : $this->t('Disabled');

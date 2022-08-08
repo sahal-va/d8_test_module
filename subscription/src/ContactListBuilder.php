@@ -88,7 +88,7 @@ class ContactListBuilder extends EntityListBuilder {
    * {@inheritdoc}
    */
   public function buildRow(EntityInterface $entity) {
-    /* @var $entity \Drupal\subscription\Entity\ContactInterface */
+    /** @var \Drupal\subscription\Entity\ContactInterface $entity */
     $row['id'] = $entity->toLink();
     $row['uid']['data'] = [
       '#theme' => 'username',

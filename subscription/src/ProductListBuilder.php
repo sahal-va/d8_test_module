@@ -90,8 +90,8 @@ class ProductListBuilder extends EntityListBuilder {
    * {@inheritdoc}
    */
   public function buildRow(EntityInterface $entity) {
-    /* @var $entity \Drupal\subscription\Entity\ProductInterface */
-    $row['id'] = $entity->getProductID();
+    /** @var \Drupal\subscription\Entity\ProductInterface $entity */
+    $row['id'] = $entity->getProductId();
     $row['title'] = $entity->toLink($entity->getName());
     $row['status'] = $entity->isEnabled() ? $this->t('Enabled') : $this->t('Disabled');
     $row['created'] = $this->dateFormatter->format($entity->getCreatedTime());

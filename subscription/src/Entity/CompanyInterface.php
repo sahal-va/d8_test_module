@@ -15,7 +15,7 @@ interface CompanyInterface extends ContentEntityInterface {
    * @return string
    *   account id of the product.
    */
-  public function getAccountID();
+  public function getAccountId();
 
   /**
    * Sets the account id.
@@ -26,7 +26,7 @@ interface CompanyInterface extends ContentEntityInterface {
    * @return \Drupal\subscription\Entity\CompanyInterface
    *   The called company entity.
    */
-  public function setAccountID($id);
+  public function setAccountId($id);
 
   /**
    * Gets the company name.

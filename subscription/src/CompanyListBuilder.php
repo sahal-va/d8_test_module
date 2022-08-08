@@ -88,8 +88,8 @@ class CompanyListBuilder extends EntityListBuilder {
    * {@inheritdoc}
    */
   public function buildRow(EntityInterface $entity) {
-    /* @var $entity \Drupal\subscription\Entity\CompanyInterface */
-    $row['id'] = $entity->getAccountID();
+    /** @var \Drupal\subscription\Entity\CompanyInterface $entity */
+    $row['id'] = $entity->getAccountId();
     $row['title'] = $entity->toLink();
     $row['created'] = $this->dateFormatter->format($entity->getCreatedTime());
     return $row + parent::buildRow($entity);

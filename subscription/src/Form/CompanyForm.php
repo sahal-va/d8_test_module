@@ -24,12 +24,11 @@ class CompanyForm extends ContentEntityForm {
       if (!empty($company)) {
         $company = reset($company);
         $form_state->setErrorByName('account_id', $this->t('Company exist with id @id.', [
-          '@id' => $company->getAccountID(),
+          '@id' => $company->getAccountId(),
         ]));
       }
     }
   }
-
 
   /**
    * {@inheritdoc}

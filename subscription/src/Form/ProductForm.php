@@ -24,7 +24,7 @@ class ProductForm extends ContentEntityForm {
       if (!empty($product)) {
         $product = reset($product);
         $form_state->setErrorByName('product_id', $this->t('Product exist with id @id.', [
-          '@id' => $product->getProductID(),
+          '@id' => $product->getProductId(),
         ]));
       }
     }

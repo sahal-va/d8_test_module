@@ -4,7 +4,6 @@ namespace Drupal\subscription\Entity;
 
 use Drupal\Core\Entity\ContentEntityInterface;
 use Drupal\user\EntityOwnerInterface;
-use Drupal\subscription\Entity\CompanyInterface;
 
 /**
  * Provides an interface defining a contact entity type.

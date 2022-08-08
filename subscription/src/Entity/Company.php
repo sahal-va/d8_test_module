@@ -49,14 +49,14 @@ class Company extends ContentEntityBase implements CompanyInterface {
   /**
    * {@inheritdoc}
    */
-  public function getAccountID() {
+  public function getAccountId() {
     return $this->get('account_id')->value;
   }
 
   /**
    * {@inheritdoc}
    */
-  public function setAccountID($id) {
+  public function setAccountId($id) {
     $this->set('account_id', $id);
     return $this;
   }

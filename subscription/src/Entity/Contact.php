@@ -7,7 +7,6 @@ use Drupal\Core\Entity\EntityStorageInterface;
 use Drupal\Core\Entity\EntityTypeInterface;
 use Drupal\Core\Field\BaseFieldDefinition;
 use Drupal\user\UserInterface;
-use Drupal\subscription\Entity\CompanyInterface;
 
 /**
  * Defines the contact entity class.
@@ -228,7 +227,7 @@ class Contact extends ContentEntityBase implements ContactInterface {
         'type' => 'string',
         'weight' => 0,
       ])
-      ->setDisplayConfigurable('view', TRUE);  
+      ->setDisplayConfigurable('view', TRUE);
 
     $fields['last_name'] = BaseFieldDefinition::create('string')
       ->setLabel(t('Last Name'))
@@ -245,7 +244,7 @@ class Contact extends ContentEntityBase implements ContactInterface {
         'type' => 'string',
         'weight' => 0,
       ])
-      ->setDisplayConfigurable('view', TRUE);  
+      ->setDisplayConfigurable('view', TRUE);
 
     $fields['company'] = BaseFieldDefinition::create('entity_reference')
       ->setLabel(t('Company'))

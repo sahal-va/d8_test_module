@@ -16,7 +16,7 @@ interface ProductInterface extends ContentEntityInterface, EntityChangedInterfac
    * @return string
    *   id of the product.
    */
-  public function getProductID();
+  public function getProductId();
 
   /**
    * Sets the product id.
@@ -27,7 +27,7 @@ interface ProductInterface extends ContentEntityInterface, EntityChangedInterfac
    * @return \Drupal\subscription\Entity\ProductInterface
    *   The called product entity.
    */
-  public function setProductID($id);
+  public function setProductId($id);
 
   /**
    * Gets the product name.
