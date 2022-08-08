@@ -19,6 +19,27 @@ class SubscriptionForm extends ContentEntityForm {
     $result = $entity->save();
     $link = $entity->toLink($this->t('View'))->toRenderable();
 
+    // Manage user account on subscription Active/Termination.
+    if ($entity->get('status')->value) {
+      $user = $entity->contact->entity->getOwner();
+      if (!$user->isActive()) {
+        $user->activate();
+        $user->save();
+      }
+    }
+    else {
+      // Check the user has any other active subscription.
+      $user = $entity->contact->entity->getOwner();
+      $active_subscriptions = $this->entityTypeManager->getStorage('subscription')->loadByProperties([
+        'contact' => $entity->contact->target_id,
+        'status' => TRUE,
+      ]);
+      if (empty($active_subscriptions)) {
+        $user->block();
+        $user->save();
+      }
+    }
+
     $message_arguments = ['%label' => $this->entity->label()];
     $logger_arguments = $message_arguments + ['link' => render($link)];
 
