@@ -8,13 +8,13 @@ Once the local environment has successfully started, install the subscription mo
 1. Clone the module inside your drupal_web_root/modules/custom
 ```bash
 # Clone
-$ git clone https://github.com/sahal-va/d8_test_module.git
+ git clone https://github.com/sahal-va/d8_test_module.git
 ```
 
 2. Install the module either by using drush or Admin UI.
 ```bash
-# Update database
-$ drush pm:enable subscription
+# Enable module
+ drush pm:enable subscription
 ```
 
 After enabling, 
@@ -31,3 +31,5 @@ iv.  For each contact entity added, a drupal user will be created with disabled 
 
      username and password will be the username part of the email used to create contact entity.
      eg: - If john.test@gmail.com is the contact email, user will be created with credentials john.test/john.test
+
+    Note: user accounts will be automatically activated/deactivated based on their subscription status.
