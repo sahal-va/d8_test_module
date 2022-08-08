@@ -1,0 +1,10 @@
+# Custom module library for general purposes.
+subscription:
+  js:
+    js/subscription.js: {}
+  css:
+    component:
+      css/subscription.css: {}
+  dependencies:
+    - core/drupalSettings
+    - subscription/jquery-labelauty

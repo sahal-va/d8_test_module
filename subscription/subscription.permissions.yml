@@ -1,0 +1,20 @@
+administer product:
+  title: 'Administer product settings'
+  restrict access: true
+access product overview:
+  title: 'Access product overview page'
+administer company:
+  title: 'Administer company settings'
+  restrict access: true
+access company overview:
+  title: 'Access company overview page'
+administer contact:
+  title: 'Administer contact settings'
+  restrict access: true
+access contact overview:
+  title: 'Access contact overview page'
+administer subscription:
+  title: 'Administer subscription settings'
+  restrict access: true
+access subscription overview:
+  title: 'Access subscription overview page'

@@ -1,0 +1,35 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - subscription
+id: product.product.default
+targetEntityType: product
+bundle: product
+mode: default
+content:
+  name:
+    type: string_textfield
+    weight: 1
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  product_id:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  status:
+    type: boolean_checkbox
+    settings:
+      display_label: false
+    weight: 2
+    region: content
+    third_party_settings: {  }
+hidden:
+  created: true

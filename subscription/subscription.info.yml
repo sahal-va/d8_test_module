@@ -1,0 +1,6 @@
+name: Subscription
+type: module
+description: Provides product, contact, company and subscription entities
+package: Custom
+core: 8.x
+core_version_requirement: ^8 || ^9

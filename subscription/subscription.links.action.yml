@@ -1,0 +1,23 @@
+product.add_form:
+  route_name: entity.product.add_form
+  title: 'Add product'
+  appears_on:
+    - entity.product.collection
+
+company.add_form:
+  route_name: entity.company.add_form
+  title: 'Add company'
+  appears_on:
+    - entity.company.collection
+
+contact.add_form:
+  route_name: entity.contact.add_form
+  title: 'Add contact'
+  appears_on:
+    - entity.contact.collection
+
+subscription.add_form:
+  route_name: entity.subscription.add_form
+  title: 'Add subscription'
+  appears_on:
+    - entity.subscription.collection

@@ -1,0 +1,48 @@
+entity.product.settings:
+  title: Product
+  description: Configure a Product entity type
+  route_name:  entity.product.settings
+  parent: system.admin_structure
+entity.product.collection:
+  title: Products
+  description: List of products
+  route_name: entity.product.collection
+  parent: system.admin_content
+entity.company.settings:
+  title: Company
+  description: Configure a Company entity type
+  route_name:  entity.company.settings
+  parent: system.admin_structure
+entity.company.collection:
+  title: Companies
+  description: List of companies
+  route_name: entity.company.collection
+  parent: system.admin_content
+entity.contact.settings:
+  title: Contact
+  description: Configure a Contact entity type
+  route_name:  entity.contact.settings
+  parent: system.admin_structure
+entity.contact.collection:
+  title: Contacts
+  description: List of contacts
+  route_name: entity.contact.collection
+  parent: system.admin_content
+entity.subscription.settings:
+  title: Subscription
+  description: Configure a Subscription entity type
+  route_name:  entity.subscription.settings
+  parent: system.admin_structure
+entity.subscription.collection:
+  title: Subscriptions
+  description: List of subscriptions
+  route_name: entity.subscription.collection
+  parent: system.admin_content
+
+# This is the custom menu given in task
+subscription.custom.users:
+  title: All Users
+  description: List of users
+  route_name: subscription.users
+  parent: system.admin
+  weight: 50

@@ -1,0 +1,36 @@
+subscription.users:
+  path: '/subscription/users'
+  defaults:
+    _title: 'Users'
+    _controller: '\Drupal\subscription\Controller\SubscriptionController::listUsers'
+  requirements:
+    _permission: 'access content'
+
+entity.product.settings:
+  path: 'admin/structure/product'
+  defaults:
+    _form: '\Drupal\subscription\Form\ProductSettingsForm'
+    _title: 'Product'
+  requirements:
+    _permission: 'administer product'
+entity.company.settings:
+  path: 'admin/structure/company'
+  defaults:
+    _form: '\Drupal\subscription\Form\CompanySettingsForm'
+    _title: 'Company'
+  requirements:
+    _permission: 'administer company'
+entity.contact.settings:
+  path: 'admin/structure/contact'
+  defaults:
+    _form: '\Drupal\subscription\Form\ContactSettingsForm'
+    _title: 'Contact'
+  requirements:
+    _permission: 'administer contact'
+entity.subscription.settings:
+  path: 'admin/structure/subscription'
+  defaults:
+    _form: '\Drupal\subscription\Form\SubscriptionSettingsForm'
+    _title: 'Subscription'
+  requirements:
+    _permission: 'administer subscription'
